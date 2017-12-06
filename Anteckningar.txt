@@ -1,0 +1,17 @@
+HEADER {
+	background: #141414;
+	height: 52px;
+	overflow: hidden;
+	position: fixed;
+	z-index: 10;
+}
+
+text {
+	font-size: 1.3em;
+    	position: relative;
+    	font-weight: 700;
+
+	font-family: 'Verlag A','Verlag B';
+    	font-style: normal;
+    	text-transform: uppercase;
+}
