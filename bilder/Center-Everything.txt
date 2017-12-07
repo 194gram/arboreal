@@ -1,0 +1,95 @@
+					CENTER EVERYTHING
+
+
+1. Text Align
+// Container måste ha text-align: center; och boxen som är i ska ha display: inline-block;
+
+.container {
+	text-align: center;
+}
+
+.box {
+	display: inline-block;
+}
+------------------------------------------------------------------------------------------------
+
+
+2. Margin Auto
+// Ingen container behövs, utan man lägger margin: 0 auto; direkt på boxen.
+
+.box {
+	margin: 0 auto;
+}
+
+samma sak
+
+.box {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+------------------------------------------------------------------------------------------------
+
+3. Position Absolute
+//Boxen har position: absolute; left 50% för att lägga den i mitten. men då kommer bara
+  boxens kant i mitten. Så då måste man ta margin-left: - bildens storlek. Om bilden är 400px.
+  så blir det -200px för att få den center. om jag skulle lägga till top: 50%; så hade boxen 
+  buggat. darför måste min container ha position: relative; för att allt sk stämma!
+
+
+.box {
+	position: absolute;
+	left: 50%;
+	margin-left: -200px;
+}
+
+Annars
+
+.container {
+	position: relative;
+}
+
+.box {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -200px;
+}
+
+--------------------------------------------------------------------------------------------------
+
+4. Translate
+// Container måste ha position: relative; och box ska ha position absolute.
+// transform:translate(-50%, -50%); gör så att boxen är i mitten och du kan ändra storleken
+// hur mycket du vill och den kommer att anpassa sig med storleken och fortfarande va i mitten!
+
+.container {
+	position: relative;
+}
+
+
+.box {
+	left: 50%;
+	top: 50%;
+	position: absolute;
+	transform:translate(-50%, -50%);
+}
+
+
+---------------------------------------------------------------------------------------------------
+
+5. Flexbox
+
+justify-content
+
+flex-start: group items at the start of a container's main axis
+flex-end: group items at the end of the main axis
+center: group items in the center of the main axis
+space-between: evenly distribute items along the main axis such that the first item aligns at the start and the final item aligns at the end
+space-around: evenly distribute items along the main axis such that all items have equal space around them
+
+align-items
+
+flex-start: align items across the start of a container's cross axis
+flex-end: align items across the end of the cross axis
+center: align items across the center of the cross axis
