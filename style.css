@@ -353,3 +353,84 @@ input[type="text"] {
 	border: none;
 	cursor: pointer;
 }
+
+
+
+/*----------------------------------------*/
+@media (max-width: 920px) {
+	.left-menu a {
+		padding: 8px;
+		font-size: 18px;
+}
+
+	.right-menu a {
+		padding: 8px;
+		font-size: 18px;
+	}
+
+	.body-img-wrapper h1 {
+		font-size: 30px;
+		margin: 0 30px;
+	}
+
+	.body-img-wrapper p {
+		font-size: 28px;
+		padding-top: 20px;
+		margin: 0 30px;
+	}
+
+	.body-img {
+		min-height: 500px;
+	}
+
+	.text-wrapper {
+		padding-top: 90px;
+	}
+}
+
+/*------------------------------------------*/
+@media (max-width: 790px) {
+
+	header {
+		position: fixed;
+	}
+
+	.header-logo {
+		max-width: 5%;
+    	height: 60px;
+	}
+
+	.body-img-wrapper {
+		padding-top: 160px;
+	}
+
+	.left-menu a {
+		padding: 8px;
+		font-size: 15px;
+	}
+
+	.right-menu a {
+		padding: 8px;
+		font-size: 15px;
+	}
+
+	.body-img-wrapper h1 {
+		font-size: 23px;
+		margin: 0 50px;
+	}	
+
+	.body-img-wrapper p {
+		padding-top: 10px;
+		font-size: 22px;
+		margin: 0 50px;
+		margin-bottom: 50px;
+	}
+
+	.body-img {
+		min-height: 400px;
+	}
+
+	.text-wrapper {
+		padding-top: 50px;
+	}
+}
